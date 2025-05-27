@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petshop Agendamentos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <header class="container">
+        <div class="title">
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <img src="src/assets/calendar.svg" alt="ícone de calendário" />
+          <input type="date" id="date-input" />
+          <span id="arrow-down" class="arrow-down"></span>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="schedule-period">
+          <header>
+            <img
+              src="src/assets/morning.svg"
+              alt="imagem de um sol e numvem que representa a manhã"
+            />
+            <h2>Manhã</h2>
+            <span>09h-12h</span>
+          </header>
+          <ul class="period-morning">
+            <li>
+              <strong>09:00</strong>
+              <p>Thor<span>/Fernanda Costa</span></p>
+              <span>Vacinação</span>
+              <button>Remover agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="schedule-period">
+          <header>
+            <img
+              src="src/assets/evening.svg"
+              alt="imagem de um sol e numvem que representa a manhã"
+            />
+            <h2>Manhã</h2>
+            <span>09h-12h</span>
+          </header>
+          <ul class="period-afternoon">
+            <li>
+              <strong>13:00</strong>
+              <p>Mel<span>/Jõao Souza</span></p>
+              <span>Corte de unhas</span>
+              <button>Remover agendamento</button>
+            </li>
+
+            <li>
+              <strong>14:00</strong>
+              <p>Bella<span>/Pedro Martins</span></p>
+              <span>Aplicação de Anti-pulgas</span>
+              <button>Remover agendamento</button>
+            </li>
+            <li>
+              <strong>15:00</strong>
+              <p>Simba<span>/Juliana Rocha</span></p>
+              <span>Tosa higieníca</span>
+              <button>Remover agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="schedule-period">
+          <header>
+            <img
+              src="src/assets/morning.svg"
+              alt="imagem de um sol e numvem que representa a manhã"
+            />
+            <h2>Noite</h2>
+            <span>19h-21h</span>
+          </header>
+          <ul class="period-night">
+            <li>
+              <strong>20:00</strong>
+              <p>Max<span>/Camila Santos</span></p>
+              <span>Limpeza de dentes</span>
+              <button>Remover agendamento</button>
+            </li>
+          </ul>
+        </section>
+
+        <button>Novo agendamento</button>
+      </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
