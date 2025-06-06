@@ -31,7 +31,7 @@
 
 <p align="center">📱 <b>Para Celular:</b></p>
 <p align="center">
-  <img alt="Projeto para Celular" src="" width="300px">
+  <img alt="Projeto para Celular" src="https://github.com/user-attachments/assets/f6ad1f8e-fa72-4043-b312-2c1597c955c7" width="300px">
 </p>
 
 ---
