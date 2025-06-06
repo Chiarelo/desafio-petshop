@@ -1,0 +1,69 @@
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 2.06rem;
+  position: relative;
+  height: 3rem;
+  margin-right: 1.88rem;
+
+  & button {
+    position: absolute;
+    /* right: 1.88rem; */
+    bottom: 2.06rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background: var(--content-brand, #9282fa);
+  border: none;
+  border-radius: 0.5rem;
+  font: var(--label-lg);
+  color: #050505;
+  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0px 0px 40px 0px rgba(146, 130, 250, 0.3);
+  text-transform: uppercase;
+
+  &:hover {
+    background: var(--background-highlights);
+  }
+}
+
+.schedule-period button {
+  background: none;
+  border: none;
+  color: var(--content-tertiary);
+
+  &:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
+  }
+}
+
+form button {
+  margin-left: auto;
+}
+
+@media (max-width: 75rem) {
+  footer {
+    display: flex;
+    justify-content: center;
+    background: var(--background-tertiary);
+    padding: 1.125rem 1.25rem;
+    margin-top: 3.5rem;
+    border: 1px solid var(--background-tertiary);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+  .button-wrapper {
+    all: unset;
+    & button {
+      position: initial;
+    }
+  }
+}

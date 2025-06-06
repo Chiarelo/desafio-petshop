@@ -1,0 +1,50 @@
+#modal {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal {
+  display: none;
+}
+
+form {
+  display: grid;
+  padding: 2.5rem 2.5rem;
+  background-color: var(--background-tertiary);
+  border-radius: 0.75rem;
+  max-width: 29.8125rem;
+
+  & fieldset {
+    display: grid;
+    gap: 1rem;
+    margin-block: 1.75rem;
+    border: none;
+  }
+}
+
+.close-form {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  form {
+    padding-inline: 1.25rem;
+    width: 21.875rem;
+    position: relative;
+
+    & fieldset {
+      width: 100%;
+    }
+
+    .close-form {
+      display: inline-block;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+}

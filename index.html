@@ -22,7 +22,7 @@
         </div>
         <div class="input-wrapper">
           <img src="src/assets/calendar.svg" alt="ícone de calendário" />
-          <input type="date" id="date-input" />
+          <input type="date" id="date-scheduled" />
           <span id="arrow-down" class="arrow-down"></span>
         </div>
       </header>
@@ -37,13 +37,15 @@
             <h2>Manhã</h2>
             <span>09h-12h</span>
           </header>
-          <ul class="period-morning">
-            <li>
-              <strong>09:00</strong>
-              <p>Thor<span>/Fernanda Costa</span></p>
+          <ul class="period-morning" id="period-morning">
+            <!-- <li>
+              <div>
+                <strong>09:00</strong>
+                <p>Thor<span>/Fernanda Costa</span></p>
+              </div>
               <span>Vacinação</span>
               <button>Remover agendamento</button>
-            </li>
+            </li> -->
           </ul>
         </section>
 
@@ -53,55 +55,153 @@
               src="src/assets/evening.svg"
               alt="imagem de um sol e numvem que representa a manhã"
             />
-            <h2>Manhã</h2>
-            <span>09h-12h</span>
+            <h2>Tarde</h2>
+            <span>13h-18h</span>
           </header>
-          <ul class="period-afternoon">
-            <li>
-              <strong>13:00</strong>
-              <p>Mel<span>/Jõao Souza</span></p>
+          <ul class="period-afternoon" id="period-afternoon">
+            <!-- <li>
+              <div>
+                <strong>13:00</strong>
+                <p>Mel<span>/Jõao Souza</span></p>
+              </div>
               <span>Corte de unhas</span>
               <button>Remover agendamento</button>
             </li>
 
             <li>
-              <strong>14:00</strong>
-              <p>Bella<span>/Pedro Martins</span></p>
+              <div>
+                <strong>14:00</strong>
+                <p>Bella<span>/Pedro Martins</span></p>
+              </div>
               <span>Aplicação de Anti-pulgas</span>
               <button>Remover agendamento</button>
             </li>
             <li>
-              <strong>15:00</strong>
-              <p>Simba<span>/Juliana Rocha</span></p>
+              <div>
+                <strong>15:00</strong>
+                <p>Simba<span>/Juliana Rocha</span></p>
+              </div>
               <span>Tosa higieníca</span>
               <button>Remover agendamento</button>
             </li>
-          </ul>
+          </ul> -->
         </section>
 
         <section class="schedule-period">
           <header>
             <img
-              src="src/assets/morning.svg"
+              src="src/assets/night.svg"
               alt="imagem de um sol e numvem que representa a manhã"
             />
             <h2>Noite</h2>
             <span>19h-21h</span>
           </header>
-          <ul class="period-night">
-            <li>
-              <strong>20:00</strong>
-              <p>Max<span>/Camila Santos</span></p>
+          <ul class="period-night" id="period-night">
+            <!-- <li>
+              <div>
+                <strong>20:00</strong>
+                <p>Max<span>/Camila Santos</span></p>
+              </div>
               <span>Limpeza de dentes</span>
               <button>Remover agendamento</button>
-            </li>
+            </li> -->
           </ul>
         </section>
-
-        <button>Novo agendamento</button>
       </main>
-    </div>
 
-    <script type="module" src="src/main.js"></script>
+      <div id="modal" class="modal hidden">
+        <form action="">
+          <img
+            src="src/assets/close.svg"
+            alt="botão de fechar formulário"
+            class="close-form"
+          />
+          <h2>Agende um atendimento</h2>
+          <p>Preencha os dados do cliente para realizar o agendamento:</p>
+
+          <fieldset>
+            <div class="input-area">
+              <label for="">Nome do tutor</label>
+              <div class="input-wrapper">
+                <img src="src/assets/user.svg" alt="ícone de usuário" />
+                <input
+                  type="text"
+                  placeholder="Helena Souza"
+                  id="tutor-name"
+                  class="tutor-name"
+                />
+              </div>
+            </div>
+            <div class="input-area">
+              <label for="">Nome do pet</label>
+              <div class="input-wrapper">
+                <img src="src/assets/pet.svg" alt="" />
+                <input
+                  type="text"
+                  name="pet-name"
+                  id="pet-name"
+                  placeholder="Cheddar"
+                />
+              </div>
+            </div>
+            <div class="input-area">
+              <label for="">Telefone</label>
+              <div class="input-wrapper">
+                <img src="src/assets/phone.svg" alt="" />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="(00) 0 0000-0000"
+                />
+              </div>
+            </div>
+            <div class="text-area">
+              <label for="">Descrição do serviço</label>
+              <textarea
+                name="service-description"
+                id="service-description"
+                placeholder="Banho e tosa"
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <div class="input-area">
+                <label for="">Data</label>
+                <div class="input-wrapper">
+                  <img src="src/assets/calendar.svg" alt="" />
+                  <input type="date" name="date" id="date" />
+                  <img
+                    src="src/assets/arrow-down-white.svg"
+                    class="white-arrow"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="input-area">
+                <label for="">Hora</label>
+                <div class="input-wrapper">
+                  <img src="src/assets/clock.svg" alt="" />
+                  <select class="time" id="time"></select>
+                  <img
+                    src="src/assets/arrow-down-white.svg"
+                    class="white-arrow"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="btn">Agendar</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="button-wrapper">
+          <button class="btn" id="new-scheduled">Novo agendamento</button>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

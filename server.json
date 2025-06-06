@@ -1,0 +1,76 @@
+{
+  "schedules": [
+    {
+      "id": "9db7a2e2-0c5d-4edb-89ee-428e01ad26ca",
+      "name": "Lara",
+      "petName": "Cheddar",
+      "phone": "12999999999",
+      "service": "Corte de pelos",
+      "date": "2025-06-04",
+      "time": "9:00"
+    },
+    {
+      "id": "d85423fa-650e-41f7-b5b9-66e3dd863ad8",
+      "name": "Teste",
+      "petName": "Teste",
+      "phone": "11111111111",
+      "service": "Banho e tosa",
+      "date": "2025-06-07",
+      "time": "8:00"
+    },
+    {
+      "id": "658671f8-b1bb-40c9-b24e-d9c5b5f56c5a",
+      "name": "Teste",
+      "petName": "Teste",
+      "phone": "11111111111",
+      "service": "Banho e tosa",
+      "date": "2025-06-19",
+      "time": "8:00"
+    },
+    {
+      "id": "b34281c2-38f1-4a2e-a67a-eb6a6ba3d5b5",
+      "name": "Karina",
+      "petName": "Teste",
+      "phone": "11111111111",
+      "service": "Baso kjdoká",
+      "date": "2025-06-07",
+      "time": "15:00"
+    },
+    {
+      "id": "556b98b3-717f-4632-aaa0-2ee0601f0003",
+      "name": "Karina",
+      "petName": "Teste",
+      "phone": "99999999999",
+      "service": "Corte de pelos",
+      "date": "2025-06-09",
+      "time": "19:00"
+    },
+    {
+      "id": "e8a2a317-991b-49d8-b837-64332e4164a5",
+      "name": "Karina",
+      "petName": "Teste",
+      "phone": "99999999999",
+      "service": "Banho e tosa",
+      "date": "2025-06-06",
+      "time": "8:00"
+    },
+    {
+      "id": "b3aa0477-ea7a-4681-b69c-4fbc5e98e1c0",
+      "name": "Karina",
+      "petName": "Teste",
+      "phone": "99999999999",
+      "service": "Banho e tosa",
+      "date": "2025-06-19",
+      "time": "20:00"
+    },
+    {
+      "id": "edb5cd61-76e2-4d1b-9a30-5854d79c8465",
+      "name": "Karina",
+      "petName": "Teste",
+      "phone": "99999999999",
+      "service": "KDJALDKAdçkd",
+      "date": "2025-06-19",
+      "time": "14:00"
+    }
+  ]
+}
