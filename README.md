@@ -1,6 +1,7 @@
 <h1 align="center">
-  <img alt="Logo" src="https://github.com/user-attachments/assets/c012289e-2b92-4a31-a34b-6fa74e7f5084" width="250px" >
+  <img alt="Logo" src="https://github.com/user-attachments/assets/031d6498-00d5-40d2-ae2d-7d08983435d9" >
 </h1>
+
 
 
 <p align="center">
